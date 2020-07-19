@@ -1,0 +1,18 @@
+<div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-xxxlarge w3-text-red"><b>List Books</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <table class="w3-table-all w3-xlarge">
+      <thead>
+        <tr class="w3-red">
+          <th>Title</th>
+          <th>Price</th>
+          <th>Pages</th>
+        </tr>
+      </thead>
+      <tr *ngFor="let book of books">
+        <td>{{book.title}}</td>
+        <td>{{book.price}}</td>
+        <td>{{book.pages}}</td>
+      </tr>
+    </table>
+</div>

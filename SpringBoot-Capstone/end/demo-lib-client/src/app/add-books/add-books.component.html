@@ -1,0 +1,20 @@
+<div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Add Book</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Add some books in this lovely library, so that the world can read, read and read!</p>
+    <form>
+      <div class="w3-section">
+        <label>Title</label>
+        <input class="w3-input w3-border" name="title" type="text" [(ngModel)]="title" required>
+      </div>
+      <div class="w3-section">
+        <label>Price</label>
+        <input class="w3-input w3-border" name="price" type="number" [(ngModel)]="price" required>
+      </div>
+      <div class="w3-section">
+        <label>Pages</label>
+        <input class="w3-input w3-border" name="pages" type="number" [(ngModel)]="pages" required>
+      </div>
+      <button type="submit" (click)="addBook()" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Save</button>
+    </form>  
+</div>
